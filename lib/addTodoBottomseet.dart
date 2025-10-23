@@ -14,12 +14,12 @@ class _AddTodoBottomSheetState extends State<AddTodoBottomSheet> {
   void _saveTodo() {
     if (_titleController.text.trim().isEmpty) return;
 
-    // 👉 여기에 할 일 추가 로직을 넣으면 됩니다.
+
     print('할 일 제목: ${_titleController.text}');
     print('설명: ${_descController.text}');
     print('즐겨찾기: $isFavorite');
 
-    Navigator.of(context).pop(); // 바텀시트 닫기
+    Navigator.of(context).pop(); 
   }
 
   @override
@@ -32,7 +32,7 @@ class _AddTodoBottomSheetState extends State<AddTodoBottomSheet> {
         bottom: MediaQuery.of(context).viewInsets.bottom,
       ),
       child: Column(
-        mainAxisSize: MainAxisSize.min, // 내용만큼 높이만 차지
+        mainAxisSize: MainAxisSize.min, 
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           TextField(
