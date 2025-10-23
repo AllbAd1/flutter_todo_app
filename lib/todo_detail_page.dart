@@ -75,9 +75,18 @@ class _ToDoDetailPageState extends State<ToDoDetailPage> {
                 ],
               )
             else
-              const Text(
-                '세부 정보 없음',
-                style: TextStyle(fontSize: 14, color: Colors.black),
+              Row(
+                children: [
+                  const Icon(
+                    Icons.short_text_rounded,
+                    size: 20,
+                    color: Colors.black,
+                  ),
+                  const Text(
+                    '세부 정보 없음',
+                    style: TextStyle(fontSize: 14, color: Colors.black),
+                  ),
+                ],
               ),
           ],
         ),
